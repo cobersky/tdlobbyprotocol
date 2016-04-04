@@ -1,29 +1,43 @@
 syntax="proto3";
 package pb;
-enum MessageId{
-	Heartbeat=0;
-	Login=1;
-	Logout=2;
-	UserBaseInfo=3;
-	RoomList=4;
-	JoinRoom=5;
-	ExitRoom=6;
-	KickPlayer=7;
-	ReadyForGame=8;
-	StartGame=9;
-	UpdatePlayer=100;
-}
-enum SexType{
-	Unknown=0;
-	Male=1;
-	Female=2;
-}
+import "enums_common.proto";
 
 message c2s_Login{
-	int64 uid=1;
+int64 uid=1;
 }
-message s2c_Login{
+message c2s_Logout{
+
+}
+message c2s_UserBaseInfo{
+
+}
+message c2s_RoomList{
+
+}
+message c2s_JoinRoom{
+
+}
+message c2s_ExitRoom{
+
+}
+message c2s_KickPlayer{
+
+}
+message c2s_ReadyForGame{
+
+}
+message c2s_StartGame{
+
+}
+
+message s2c_LoginResponse{
 	string nickname=1;
 	SexType sex=2;
 	int32 Level=3;
+}
+message s2c_LogoutResponse{
+	
+}
+message s2c_UpdatePlayerInfo{
+	
 }
