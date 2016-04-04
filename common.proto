@@ -1,0 +1,5 @@
+syntax="proto3";
+package pb;
+message c2s_Heartbeat{
+
+}

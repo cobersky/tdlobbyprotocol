@@ -1,0 +1,21 @@
+syntax="proto3";
+package pb;
+enum C2S{
+	Heartbeat=0;
+	Login=1;
+	Logout=2;
+	UserBaseInfo=3;
+	RoomList=4;
+	JoinRoom=5;
+	ExitRoom=6;
+	KickPlayer=7;
+	ReadyForGame=8;
+	StartGame=9;
+}
+
+enum S2C{
+	Error=0;
+	LoginResponse=1;
+	LogoutResponse=2;
+	UpdatePlayerInfo=100;
+}

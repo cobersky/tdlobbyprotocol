@@ -1,0 +1,11 @@
+syntax="proto3";
+package pb;
+import "enums_message.proto";
+enum ErrorCode{
+	UnknownError=0;
+}
+message s2c_Error{
+	C2S c2s=1;
+	ErrorCode code=2;
+	repeated string args=3;
+}
