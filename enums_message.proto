@@ -1,6 +1,6 @@
 syntax="proto3";
 package pb;
-enum C2S{
+enum C2SMid{
 	Heartbeat=0;
 	Login=1;
 	Logout=2;
@@ -13,7 +13,7 @@ enum C2S{
 	StartGame=9;
 }
 
-enum S2C{
+enum S2CMid{
 	Error=0;
 	LoginResponse=1;
 	LogoutResponse=2;

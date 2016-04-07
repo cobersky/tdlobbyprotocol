@@ -5,7 +5,7 @@ enum ErrorCode{
 	UnknownError=0;
 }
 message s2c_Error{
-	C2S c2s=1;
+	C2SMid c2s=1;
 	ErrorCode code=2;
 	repeated string args=3;
 }
